@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Age Calculator</string>
+    <string name="year_of_birth_hint">1990</string>
+    <string name="calculate_age_button">Calculate Age</string>
+    <string name="your_age_appears_here">Your Age Appears Here</string>
 </resources>
