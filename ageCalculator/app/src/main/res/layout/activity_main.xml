@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context="com.feelgoodapps.myapplication.MainActivity">
 
@@ -29,7 +30,6 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:hint="@string/your_age_appears_here"
-        android:textSize="@dimen/large_text"
-        />
+        android:textSize="@dimen/large_text" />
 
 </LinearLayout>
