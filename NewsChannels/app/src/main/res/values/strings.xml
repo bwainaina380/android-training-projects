@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsChannels</string>
+    <string name="get_channels_btn">Get Channels</string>
+    <string-array name="news_categories">
+        <item>Global News</item>
+        <item>Sports News</item>
+        <item>Business News</item>
+    </string-array>
+    <string name="channels_hint">Channels Will Appear Here</string>
+</resources>

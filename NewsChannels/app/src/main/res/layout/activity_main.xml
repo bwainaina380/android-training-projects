@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context="com.feelgoodapps.newschannels.MainActivity">
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:entries="@array/news_categories"/>
+
+    <Button
+        android:id="@+id/get_channels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getChannels"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/get_channels_btn" />
+
+    <TextView
+        android:id="@+id/channels_for_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="@string/channels_hint"/>
+
+</LinearLayout>
