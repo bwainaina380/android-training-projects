@@ -7,4 +7,5 @@
         <item>Business News</item>
     </string-array>
     <string name="channels_hint">Channels Will Appear Here</string>
+    <string name="next_activity">Next Activity</string>
 </resources>
