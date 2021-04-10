@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AddDeduct</string>
+    <string name="score_display_hint">0</string>
+    <string name="add_score">+ Score</string>
+    <string name="deduct_score">- Score</string>
+</resources>
