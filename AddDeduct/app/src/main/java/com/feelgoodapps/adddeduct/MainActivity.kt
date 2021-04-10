@@ -35,6 +35,21 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "Activity Resuming", Toast.LENGTH_SHORT).show()
     }
 
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(this, "Activity Starting", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Toast.makeText(this, "Activity Stopping", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Toast.makeText(this, "Activity Restarting", Toast.LENGTH_SHORT).show()
+    }
+
     fun addScore(view: View) {
         var scoreText: TextView = findViewById(R.id.score_display)
         score++
