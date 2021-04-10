@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Toast.makeText(this, "Activity Created", Toast.LENGTH_SHORT).show()
 
         if(savedInstanceState != null) {
             score = savedInstanceState.getInt("score")
@@ -48,6 +49,11 @@ class MainActivity : AppCompatActivity() {
     override fun onRestart() {
         super.onRestart()
         Toast.makeText(this, "Activity Restarting", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Toast.makeText(this, "Activity Destroyed", Toast.LENGTH_SHORT).show()
     }
 
     fun addScore(view: View) {
