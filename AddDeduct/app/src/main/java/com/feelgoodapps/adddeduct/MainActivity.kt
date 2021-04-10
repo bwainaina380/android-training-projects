@@ -11,6 +11,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if(savedInstanceState != null) {
+            score = savedInstanceState.getInt("score")
+            var scoreText: TextView = findViewById(R.id.score_display)
+            scoreText.setText(score.toString())
+        }
+    }
+
+    override fun onSaveInstanceState(bundle: Bundle){
+        super.onSaveInstanceState(bundle)
+        bundle.putInt("score", score)
     }
 
     fun addScore(view: View) {
