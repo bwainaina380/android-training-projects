@@ -1,18 +1,24 @@
 package com.feelgoodapps.adddeduct
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
     var score = 0
+    private lateinit var viewModel: AddDeductViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Toast.makeText(this, "Activity Created", Toast.LENGTH_SHORT).show()
+
+        Log.i("MainActivity", "called viewModelProvider.get")
+        viewModel = ViewModelProvider(this).get(AddDeductViewModel::class.java)
 
         if(savedInstanceState != null) {
             score = savedInstanceState.getInt("score")
