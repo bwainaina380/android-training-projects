@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoffeeHouse</string>
+    <string-array name="top_level_items">
+        <item>Coffee Stores</item>
+        <item>Drinks</item>
+        <items>Foods</items>
+    </string-array>
+</resources>
